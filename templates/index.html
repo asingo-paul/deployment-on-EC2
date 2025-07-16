@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Home | Asingo Paul{% endblock %}
+{% block content %}
+<section>
+  <h2>About Me</h2>
+  <p>
+Cloud Computing professional with a strong background in cloud technologies, DevOps practices, and passionate about building scalable, secure cloud-based solutions. Adapts at automating cloud infrastructure, implementing security measures, and utilizing best practices in cloud computing. Passionate about delivering high-quality, cost-effective solutions with a focus on scalability and security.
+Thorough team contributor with strong organizational capabilities. Experienced in handling numerous projects at once while ensuring accuracy. Effective at prioritizing tasks and meeting deadlines.
+  </p>
+</section>
+<section>
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Cloud:</strong>Monitoring tools
+Cloud architecture design
+Kubernetes management
+Disaster recovery
+Scripting languages
+Network configuration
+Cost optimization
+Security protocols
+Docker mastery
+Storage virtualization
+Containerization technologies
+Logging solutions
+Design
+Continuous integration
+Continuous deployment
+Cloud services
+AWS expertise</li>
+  
+    
+  </ul>
+</section>
+<section>
+  <h2>Resume</h2>
+  <a class="button" href="{{ url_for('static', filename='files/MY_CV.pdf') }}" target="_blank">📄 View CV</a>
+  <a class="button" href="{{ url_for('static', filename='files/MY_CV.pdf') }}" download>⬇️ Download CV</a>
+</section>
+{% endblock %}

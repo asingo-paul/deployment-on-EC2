@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Contact | Asingo Paul{% endblock %}
+
+{% block content %}
+<section style="text-align: center;">
+  <h2 style="margin-bottom: 30px;">Contact Me</h2>
+
+  <form method="POST" style="max-width: 500px; margin: 0 auto; text-align: left;">
+    <label for="name">Your Name</label><br>
+    <input type="text" name="name" id="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: none;">
+
+    <label for="email">Your Email</label><br>
+    <input type="email" name="email" id="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: none;">
+
+    <label for="message">Your Message</label><br>
+    <textarea name="message" id="message" rows="5" required style="width: 100%; padding: 10px; border-radius: 5px; border: none;"></textarea>
+
+    <div style="text-align: center;">
+      <button class="button" type="submit">Send Message</button>
+    </div>
+  </form>
+</section>
+{% endblock %}
